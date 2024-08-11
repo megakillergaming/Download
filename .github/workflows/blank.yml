@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Download Link</title>
+    <style>
+        body {
+            background-image: url('image.png'); /* Use the uploaded image here */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .follow-button, .download-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .download-link {
+            display: none;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>One Step away From Download</h2>
+        <h1>Follow Our Facebook Page & Unlock Download Link</h1>
+        <a class="follow-button" href="https://www.facebook.com/chanetlankacomputers" target="_blank">Follow</a>
+        <a class="download-link" href="https://www.chanetlankacomputers.com">Download Link</a>
+    </div>
+
+    <script>
+        document.querySelector('.follow-button').addEventListener('click', function() {
+            setTimeout(function() {
+                document.querySelector('.download-link').style.display = 'inline-block';
+            }, 2000); // Simulate a delay for following
+        });
+    </script>
+</body>
+</html>
